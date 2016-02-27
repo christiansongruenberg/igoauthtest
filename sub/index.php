@@ -12,7 +12,7 @@ $params = array(
     'object' => 'user',
     'aspect' => 'media',
     'verify_token' => 'myVerifyToken',
-    'callback_url' => 'http://159.203.6.68/sub/'
+    'callback_url' => 'http://159.203.43.159/sub/'
 );
 
 // Build Http query using params
