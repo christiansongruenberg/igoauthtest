@@ -34,7 +34,7 @@ $params = array(
     'client_id' => '654ff94de9ee44cead7e4de4891d5d18',
     'client_secret' => 'e96b9424eee14238a947738fc4e6a753',
     'grant_type' => 'authorization_code',
-    'redirect_uri' => 'http://localhost/oauth/accept.php',
+    'redirect_uri' => 'https://localhost/oauth/accept.php',
     'code' => $get
 );
 
@@ -57,7 +57,19 @@ $result =  file_get_contents (
     false,
     $context);
 
-echo $result;
+var_dump($result);
 
 // Server response is now stored in $result variable so you can process it
 
+?>
+<!doctype html>
+<html lang="en">
+<head>
+        <script src="accept.js"></script>
+        <meta charset="UTF-8">
+        <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
